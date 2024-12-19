@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8">
-    <title>Micro Musings</title>
+    <title>Lyssa Albertson</title>
   </head>
   <style>
     body {
@@ -33,10 +33,7 @@
       width: min-content;
     }
 
-    .micro:hover {
-      animation-name: shrink;
-      animation-duration: 8s
-    }
+   
 
     .musings {
       display: inline flex;
@@ -44,31 +41,9 @@
 
     }
 
-    .musings:hover {
-      animation-name: stretch;
-      animation-duration: 5s
-    }
+   
 
-    @keyframes shrink {
-      0% {
-        scale: 1
-      }
-
-      100% {
-        scale: .01
-      }
-    }
-
-    @keyframes stretch {
-      0% {
-        transform: scaleY(1)
-      }
-
-      100% {
-        transform: scaleY(1.8)
-      }
-    }
-
+    
     .mains {
       color: black;
       font-family: "title";
@@ -95,7 +70,7 @@
       color: black
     }
 
-    .rankings {
+    .description {
       font-family: "Montserrat";
       font-size: large;
       text-align: center;
@@ -103,7 +78,7 @@
       color: black
     }
 
-    .album-container {
+    .flier-container {
       border-bottom: black 3px dotted;
       padding-bottom: 3vh;
       padding-top: 3vh;
@@ -111,17 +86,17 @@
       white-space: nowrap
     }
 
-    .album-container::-webkit-scrollbar {
+    .flier-container::-webkit-scrollbar {
       display: none
     }
 
-    .album {
+    .flier {
       position: relative;
       transition: transform .7s ease;
       display: inline-block;
     }
 
-    .music-review {
+    .flier-disc {
       display: none;
       font-size: 12px;
       width: 250px;
@@ -134,28 +109,28 @@
 
     }
 
-    .music-review.show {
+    .flier-disc.show {
       display: block
     }
 
-    .music-review::-webkit-scrollbar {
+    .flier-disc::-webkit-scrollbar {
       display: none
     }
 
-    .music-img {
+    .flier-img {
       height: 300px;
     }
 
-    .album:hover .music-review {
+    .flier:hover .flier-disc {
       display: block
     }
 
 
-    .shift-album {
+    .shift-flier {
       transform: translateX(280px);
     }
 
-    .movies-tv-container {
+    .presentation-container {
       border-bottom: black 3px dotted;
       padding-bottom: 3vh;
       padding-top: 3vh;
@@ -163,23 +138,23 @@
       white-space: nowrap
     }
 
-    .movies-tv-container::-webkit-scrollbar {
+    .presentation-container::-webkit-scrollbar {
       display: none
     }
 
-    .movie {
+    .presentation {
       position: relative;
       transition: transform .7s ease;
       display: inline-block;
     }
 
-    .movies-img {
+    .presentations-img {
       height: 250px;
       width: 170px;
 
     }
 
-    .movie-review {
+    .presentation-disc {
       display: none;
       font-size: 12px;
       width: 180px;
@@ -192,19 +167,19 @@
       
     }
 
-    .movie-review::-webkit-scrollbar {
+    .presentation-disc::-webkit-scrollbar {
       display: none
     }
 
-    .movie-review.show {
+    .presentation-disc.show {
       display: block
     }
 
-    .movie:hover .movie-review {
+    .presentation:hover .presentation-disc {
       display: block
     }
 
-    .shift-movie {
+    .shift-presentation {
       transform: translateX(200px);
     }
 
@@ -233,7 +208,7 @@
     }
 
 
-    .book-review {
+    .book-disc {
       display: none;
       font-size: 12px;
       width: 180px;
@@ -246,15 +221,15 @@
       
     }
 
-    .book-review::-webkit-scrollbar {
+    .book-disc::-webkit-scrollbar {
       display: none
     }
 
-    .book-review.show {
+    .book-disc.show {
       display: block
     }
 
-    .book:hover .book-review {
+    .book:hover .book-disc {
       display: block
     }
 
@@ -279,33 +254,33 @@
     
     
     <div class="mains"> Music </div>
-    <div class="album-container">
+    <div class="flier-container">
 
-      <div class="album">
-        <img class="music-img" src="Cowboy-Up.png" alt="Flier for an event called Cowboy Up, based on art for Beyonce's 'Cowboy Carter'">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Cowboy-Up.png" alt="Flier for an event called Cowboy Up, based on art for Beyonce's 'Cowboy Carter'">
+        <div class="flier-disc">
           <div class="title">
             
           </div>
           <div class="sentence">
             
           </div>
-          <div class="rankings">
+          <div class="description">
            A flier based on a promotional post Beyonce made for the release of her alubum <i> Cowboy Carter</i>
           </div>
         </div>
       </div>
-      <div class="album">
+      <div class="flier">
 
-        <img class="music-img" src="Senior-Day-Fliers.png" alt="Megan thee Stallion's album 'Tina Snow' album art">
-        <div class="music-review">
+        <img class="flier-img" src="Senior-Day-Fliers.png" alt="Megan thee Stallion's flier 'Tina Snow' flier art">
+        <div class="flier-disc">
           <div class="title">
             Tina Snow
           </div>
           <div class="sentence">
             I would die for Megan thee Stallion.
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Hot Girl<br>
             2. Big Ole Freak<br>
             3. Freak Nasty<br>
@@ -320,16 +295,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="FAFSA-Popcorn.png" alt="album cover for Florence and the Machine's album 'Lungs'">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="FAFSA-Popcorn.png" alt="flier cover for Florence and the Machine's flier 'Lungs'">
+        <div class="flier-disc">
           <div class="title">
             Lungs
           </div>
           <div class="sentence">
             Passion! Energy! Aggresion!
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Rabbit Heart (Raise it Up)<br>
             2. Hurricane Drunk<br>
             3. Dog Days Are Over<br>
@@ -347,16 +322,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="FAFSA-Poster-Sci-Fi.png" alt="Beyoncé's self titled album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="FAFSA-Poster-Sci-Fi.png" alt="Beyoncé's self titled flier cover">
+        <div class="flier-disc">
           <div class="title">
             Beyoncé
           </div>
           <div class="sentence">
-            XO alone propels this album to a peak that most artists will never see in their lifetime.
+            XO alone propels this flier to a peak that most artists will never see in their lifetime.
           </div>
-          <div class="rankings">
+          <div class="description">
             1. XO<br>
             2. Haunted<br>
             3. Rocket<br>
@@ -376,17 +351,17 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="Brochure-Harvest-Festival.png
-" alt="Anti by Rihanna album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Brochure-Harvest-Festival.png
+" alt="Anti by Rihanna flier cover">
+        <div class="flier-disc">
           <div class="title">
             Anti (Deluxe)
           </div>
           <div class="sentence">
             A winner: great lyricism, high dancibility, what more can one ask for?
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Same Ol' Mistakes<br>
             2. Yeah, I Said It<br>
             3. Kiss It Better<br>
@@ -408,16 +383,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="OBS-Flyer.png" alt="The Divine Feminine by Mac Miller album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="OBS-Flyer.png" alt="The Divine Feminine by Mac Miller flier cover">
+        <div class="flier-disc">
           <div class="title">
             The Divine Feminine
           </div>
           <div class="sentence">
-            Just a stunning album (my favorite of all time?)
+            Just a stunning flier (my favorite of all time?)
           </div>
-          <div class="rankings">
+          <div class="description">
             1. God is Fair, Sexy Nasty<br>
             2. Dang!<br>
             3. Congratulations<br>
@@ -433,16 +408,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="FAFSA-Ticket-Stuff.png" alt="The Pinkprint by Nicki Minaj album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="FAFSA-Ticket-Stuff.png" alt="The Pinkprint by Nicki Minaj flier cover">
+        <div class="flier-disc">
           <div class="title">
             The Pinkprint
           </div>
           <div class="sentence">
             Some of Nicki's most vulnerable, and it pays off.
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Favorite<br>
             2. Want Some More<br>
             3. The Night Is Still Young<br>
@@ -464,16 +439,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="Olivia_Rodrigo-Guts.png" alt="GUTS by Olivia Rodrigo album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Olivia_Rodrigo-Guts.png" alt="GUTS by Olivia Rodrigo flier cover">
+        <div class="flier-disc">
           <div class="title">
             GUTS
           </div>
           <div class="sentence">
             I loved Sour, but this just didn't hit as hard.
           </div>
-          <div class="rankings">
+          <div class="description">
             1. vampire<br>
             2. all-american bitch<br>
             3. get him back!<br>
@@ -490,16 +465,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="Hozier-Unreal_Unearth.png" alt="Unreal Unearth by Hozier album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Hozier-Unreal_Unearth.png" alt="Unreal Unearth by Hozier flier cover">
+        <div class="flier-disc">
           <div class="title">
             Unreal Unearth
           </div>
           <div class="sentence">
             The songs I liked I <i>really</i> liked!
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Eat Your Young<br>
             2. Damage Gets Done<br>
             3. Francesca<br>
@@ -520,16 +495,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="ChloeHalle-Sugar-Symphony.jpg" alt="Sugar Symphony by Chloe X Halle album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="ChloeHalle-Sugar-Symphony.jpg" alt="Sugar Symphony by Chloe X Halle flier cover">
+        <div class="flier-disc">
           <div class="title">
             Sugar Symphony
           </div>
           <div class="sentence">
             Most underrated collection of songs of <i>all time</i> <br><br>
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Fall<br>
             2. Thunder<br>
             3. Lazy Love<br>
@@ -540,16 +515,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="Sabrina_Carpenter-Emails_I_Can't_Send.png" alt="Emails I Can't Send by Sabrina Carpenter album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Sabrina_Carpenter-Emails_I_Can't_Send.png" alt="Emails I Can't Send by Sabrina Carpenter flier cover">
+        <div class="flier-disc">
           <div class="title">
             emails i can't send
           </div>
           <div class="sentence">
-            Pop music will never recover (this is a compliment).
+            Pop flier will never recover (this is a compliment).
           </div>
-          <div class="rankings">
+          <div class="description">
             1. because i liked a boy<br>
             2. Read Your Mind<br>
             3. Bad for Business<br>
@@ -567,16 +542,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="Midnights-Taylor_Swift.png" alt="Midnights by Taylor Swift album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Midnights-Taylor_Swift.png" alt="Midnights by Taylor Swift flier cover">
+        <div class="flier-disc">
           <div class="title">
             Midnights
           </div>
           <div class="sentence">
             Just...not a fan? 13 y/o me loved T. Swift but I think the love has faded
           </div>
-          <div class="rankings">
+          <div class="description">
             1. Bejewled<br>
             2. Question?<br>
             3. Karma<br>
@@ -594,16 +569,16 @@
           </div>
         </div>
       </div>
-      <div class="album">
-        <img class="music-img" src="Beyonce-Lemonade.png" alt="Lemonade by Beyoncé album cover">
-        <div class="music-review">
+      <div class="flier">
+        <img class="flier-img" src="Beyonce-Lemonade.png" alt="Lemonade by Beyoncé flier cover">
+        <div class="flier-disc">
           <div class="title">
             Lemonade
           </div>
           <div class="sentence">
-            Beyoncé's best and the best album of all time.
+            Beyoncé's best and the best flier of all time.
           </div>
-          <div class="rankings">
+          <div class="description">
             1. All Night<br>
             2. Love Drought<br>
             3. 6 Inch<br>
@@ -621,7 +596,7 @@
           </div>
         </div>
       </div>
-      <div class="album">
+      <div class="flier">
         <a href="https://open.spotify.com/user/lyssamariea" target="_blank">
           <img class="logo" src="spotify.png" alt="green spotify logo">
         </a>
@@ -633,18 +608,18 @@
 
     </div>
     <div class="mains"> TV Shows and Movies </div>
-    <div class="movies-tv-container">
+    <div class="presentation-container">
 
-      <div class="movie">
-        <img class="movies-img" src="Circuits-in-the-Summer.png" alt="Blue Eye Samurai, an animated tv series">
-        <div class="movie-review">
+      <div class="presentation">
+        <img class="presentations-img" src="Circuits-in-the-Summer.png" alt="Blue Eye Samurai, an animated tv series">
+        <div class="presentation-disc">
           <div class="title">
             Blue Eye Samurai
           </div>
           <div class="sentence">
             Sorta queer, really beautiful, a good watch.<br><br>
           </div>
-          <div class="rankings">
+          <div class="description">
             <b>8/10</b><br>
             This was for sure one of those first seasons that include an insane amount of set up for season 2. So the ending was <i>really</i> unsatisfying
             <br>
@@ -655,18 +630,18 @@
         </div>
       </div>
 
-      <div class="movie">
-        <img class="movies-img" src="sugar-cookie-slides.png" alt="Lady Bird the Movie Poster">
-        <div class="movie-review">
+      <div class="presentation">
+        <img class="presentations-img" src="sugar-cookie-slides.png" alt="Lady Bird the Movie Poster">
+        <div class="presentation-disc">
           <div class="title">
             Lady Bird
           </div>
           <div class="sentence">
             I miss my mom.<br><br>
           </div>
-          <div class="rankings">
+          <div class="description">
             <b>7/10</b><br>
-            It was alright...not as poignant as I thought it might be. I feel like this is a lot of white women's favorite movie, and I'm glad for them.
+            It was alright...not as poignant as I thought it might be. I feel like this is a lot of white women's favorite presentation, and I'm glad for them.
             <br>
             <br>
             <b> dir. Greta Gerwig<br>
@@ -675,16 +650,16 @@
         </div>
       </div>
 
-      <div class="movie">
-        <img class="movies-img" src="Albertson-Race-and-Time-Presentation.png" alt="Interview with the Vampire, the AMC tv show">
-        <div class="movie-review">
+      <div class="presentation">
+        <img class="presentations-img" src="Albertson-Race-and-Time-Presentation.png" alt="Interview with the Vampire, the AMC tv show">
+        <div class="presentation-disc">
           <div class="title">
             Interview with the Vampire
           </div>
           <div class="sentence">
             Gay vampires in 1920s New Orleans, ofc it was gonna be good.<br><br>
           </div>
-          <div class="rankings">
+          <div class="description">
             <b>9/10</b><br>
             I'm really excited for season two! This was so toxic, but in a very entertaining way, I'm intrigued to say the least.
             <br>
@@ -695,16 +670,16 @@
         </div>
 
       </div>
-      <div class="movie">
-        <img class="movies-img" src="FAFSA.png" alt="Glow Up, the British reality tv show">
-        <div class="movie-review">
+      <div class="presentation">
+        <img class="presentations-img" src="FAFSA.png" alt="Glow Up, the British reality tv show">
+        <div class="presentation-disc">
           <div class="title">
             Glow Up
           </div>
           <div class="sentence">
             I don't know why I like this so much...but I do<br><br>
           </div>
-          <div class="rankings">
+          <div class="description">
             <b>9/10</b><br>
             I'm not even that in to reality TV anymore, but when a new Glow Up season drops, I'm sat. And I get embarassingly emotional too--like, girl, it's make up.
             <br>
@@ -714,674 +689,82 @@
           </div>
         </div>
 
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="matilda.jpg" alt="Matilda, the 1996 film">
-        <div class="movie-review">
-          <div class="title">
-            Matilda
-          </div>
-          <div class="sentence">
-            Possibly the best movie of all time.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            I watched this on a plane ride and the lengths I had to go to keep from crying in public. Such a beautiful movie--Danny Devito at his best fr.
-            <br>
-            <br>
-            <b> dir. Danny Devito<br>
-              How I watched: On a plane</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="jjk.jpg" alt="Cover for Jujutsu Kaisen the tv series">
-        <div class="movie-review">
-          <div class="title">
-            Jujutsu Kaisen
-          </div>
-          <div class="sentence">
-            I binged this in three days, need I say more?<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            This was my first real anime, and what a way to kick it off. I watched this <i>and</i> read the manga. I have absoultely no regrets
-            <br>
-            <br>
-            <b>
-              How I watched: Crunchy Roll in my childhood home</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="the-meg-2.jpg" alt="Movie poster for The Meg 2">
-        <div class="movie-review">
-          <div class="title">
-            Meg 2: The Trench
-          </div>
-          <div class="sentence">
-            See "The Meg"<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            This one loses half a point because the plot was so weird? It was Jason v. Shark <i>and</i> the Government <i>and</i> a Mexican...crew?
-            <br>
-            <br>
-            <b> dir.Ben Wheatley<br>
-              How I watched: On my childhood living room TV</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="the-meg.jpg" alt="Movie poster for The Meg">
-        <div class="movie-review">
-          <div class="title">
-            The Meg
-          </div>
-          <div class="sentence">
-            Cheesy, but enjoyable.<br><br>
-          </div>
-          <div class="rankings">
-            <b>8.5/10</b><br>
-            I watched this with my mom, who loves Jason Statham, and had a grand ole time making fun of how cheesy it was. For the mems alone, it gets a good rating
-            <br>
-            <br>
-            <b> dir. Jon Turteltaub<br>
-              How I watched: On my childhood living room TV</b>
-          </div>
-        </div>
-      </div>
+   
 
-      <div class="movie">
-        <img class="movies-img" src="the-heat.jpg" alt="Movie poster for the 2013 movie The Heat">
-        <div class="movie-review">
-          <div class="title">
-            The Heat
-          </div>
-          <div class="sentence">
-            Now, this is well done copaganda!<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            It wasn't as funny as I remember, but it was funny. Minus points for the copaganda (but at least it's funny!)
-            <br>
-            <br>
-            <b> dir.Paul Feig<br>
-              How I watched: On my childhood living room TV</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="movie">
-        <img class="movies-img" src="shameless.jpg" alt="Shameless season 4 promotional poster">
-        <div class="movie-review">
-          <div class="title">
-            Shameless (up to season 4)
-          </div>
-          <div class="sentence">
-            Good until it wasn't.<br><br>
-          </div>
-          <div class="rankings">
-            <b>7/10</b><br>
-            I loved this show until it got old. Like we get it, Frank is an awful dad, give me <i>something</i> else. My final straw was when it started to get like daytime tv.
-            <br>
-            <br>
-            <b>
-              How I watched: Crocheting a bunch of granny squares for my daily enrichment activity</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="beef.jpg" alt="Beef, the 2023 Netflix show">
-        <div class="movie-review">
-          <div class="title">
-            Beef
-          </div>
-          <div class="sentence">
-            Good! But had tough competition.<br><br>
-          </div>
-          <div class="rankings">
-            <b>9/10</b><br>
-            I watched this after I had watched Succession <i>and</i> The Bear. But it was still a good show! Just not as good as the others.
-            <br>
-            <br>
-            <b>
-              How I watched: Crocheting a bunch of granny squares for my daily enrichment activity</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="the-bear.cHJkLWVtcy1hc3NldHMvdHZzZXJpZXMvODgxZDkxYTMtZWVjNS00OTc4LWJiY2MtMWNhNmUzNTFhZGI1LmpwZw==" alt="Promotional poster for season 2 of the Bear">
-        <div class="movie-review">
-          <div class="title">
-            The Bear
-          </div>
-          <div class="sentence">
-            SydCarm 4 Lyfe <br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            I watched both seasons back to back and it was just too good. The slow burn is slow burning, the side characters are all so fleshed out, just so good.
-            <br>
-            <br>
-            <b>
-              How I watched: During the height of a Chicago summer</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="succesion.jpg" alt="promotional poster for the final season of Succesion">
-        <div class="movie-review">
-          <div class="title">
-            Succesion
-          </div>
-          <div class="sentence">
-            A masterclass in dramaturgy<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            After I finished this show, I watched an edit of Shiv and Roman on TikTok that made me sob. I mourned the loss of these characters like they were real.
-            <br>
-            <br>
-            <b>
-              How I watched: Over the course of an intense weekend</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="movie">
-        <img class="movies-img" src="little-mermaid.jpg" alt="Movie poster for the 2023, live action Little Mermaid">
-        <div class="movie-review">
-          <div class="title">
-            The Little Mermaid
-          </div>
-          <div class="sentence">
-            I liked the songs.<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            It was good. I'm not a fan of<i> The Little Mermaid </i>in general but the soundtrack is killer.
-            <br>
-            <br>
-            <b> dir. Rob Marshall<br>
-              How I watched: In a movie theater</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="movie">
-        <img class="movies-img" src="spiderman.jpg" alt="Movie poster for the animated movie Spiderman: Across the Spiderverse">
-        <div class="movie-review">
-          <div class="title">
-            Spiderman: Across the Spiderverse
-          </div>
-          <div class="sentence">
-            The animation, omfg<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            If you told me I would wish an almost 3 hour movie was <i>longer</i> I would laugh. But something's in this movie that changes the space time continuum.
-            <br>
-            <br>
-            <b> dir. Peter Ramsey<br>
-              How I watched: In theaters, with my family</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="movie">
-        <img class="movies-img" src="super-mario-movie.jpg" alt="Poster for the animated 2023 Super Mario Bros. movie">
-        <div class="movie-review">
-          <div class="title">
-            Super Mario Bros.
-          </div>
-          <div class="sentence">
-            Peaches, Peaches, Peaches, Peachesss<br><br>
-          </div>
-          <div class="rankings">
-            <b>7/10</b><br>
-            It was good! Chris Pratt almost ruined it, but Jack Black saved it. Also I liked Bowser's character arc.
-            <br>
-            <br>
-            <b> dir. Aaron Horvath<br>
-              How I watched: In a theater, with a friend</b>
-          </div>
-        </div>
-      </div>
-
-      <div class="movie">
-        <img class="movies-img" src="parasite.jpg" alt="Movie poster for the 2019 film Parasite">
-        <div class="movie-review">
-          <div class="title">
-            Parasite
-          </div>
-          <div class="sentence">
-            The rewatchability is insane.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            This was maybe my fourth or fifth time watching this movie. It never gets old. I watch it on most plane rides.
-            <br>
-            <br>
-            <b> dir. Bong Joon-ho<br>
-              How I watched: On a plane</b>
-          </div>
-        </div>
-      </div>
-      <div class="movie">
-        <img class="movies-img" src="puss-in-boots.jpg" alt="Movie poster for the 2022 animated film Puss in Boots: The Last Wish">
-        <div class="movie-review">
-          <div class="title">
-            Puss in Boots: The Last Wish
-          </div>
-          <div class="sentence">
-            <i>Shrek</i> has only brought about good things in my life.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            This was so beautiful. About death, and life, and found family, and dog with no name. Ugh, I feel honored to have seen it
-            <br>
-            <br>
-            <b> dir. Joel Crawford<br>
-              How I watched: With my brothers, at a movie theater</b>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-    <div class="mains"> Books </div>
-    <div class="book-container">
-      <div class="book">
-        <img class="book-img" src="throne-of-the-fallen.png" alt="Cover for Throne of the Fallen by Kerri Maniscalco">
-        <div class="book-review">
-          <div class="title">
-            Throne of the Fallen
-          </div>
-          <div class="sentence">
-            <i>Kingdom of the Wicked</i> was wayyy better, I'm disappointed.<br><br>
-          </div>
-          <div class="rankings">
-            <b>7/10</b><br>
-            Read this if you like a weird mix of smut and plot, puzzles, and an unstatisfying ending
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="fall-of-wrath-and-ruin.jpg" alt="Cover for Fall of Ruin and Wrath by Jennifer Armentrout">
-        <div class="book-review">
-          <div class="title">
-            Fall of Ruin and Wrath
-          </div>
-          <div class="sentence">
-            I used to be a JLA stan... She's losing me.<br><br>
-          </div>
-          <div class="rankings">
-            <b>6/10</b><br>
-            Read this if you like booktok romantasy faves, a plot that doesn't really matter, and having a little fun, but at what cost?
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="the-poppy-war.png" alt="Cover for The Poppy War by R.F Kaung">
-        <div class="book-review">
-          <div class="title">
-            The Poppy War
-          </div>
-          <div class="sentence">
-            I think i can't continue the series because Rin is... not doing too hot, but it was fun while it lasted<br><br>
-          </div>
-          <div class="rankings">
-            <b>9/10</b><br>
-            Read this if you like amazing world building, an insane protagonist, and epic fantasies
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="things-we-hide-from-the-light.jpg" alt="Cover for Things We Hide From the Light by Lucy Score">
-        <div class="book-review">
-          <div class="title">
-            Things We Hide From the Light
-          </div>
-          <div class="sentence">
-            yeah... fame has changed Lucy that's for sure.<br><br>
-          </div>
-          <div class="rankings">
-            <b>3/10</b><br>
-            Read this if you like copaganda, 40 year olds who act like children, and not having fun
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="the-shape-of-water.jpg" alt="Book cover for The Shape of Water bu Guillmero del Toro and Daniel Kraus">
-        <div class="book-review">
-          <div class="title">
-            The Shape of Water
-          </div>
-          <div class="sentence">
-            What a weird, funky, amazing book.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            Read this if you like weird shit, crying, and beautiful love stories.
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="a-light-in-the-flame.jpg" alt="Book cover for A Light in the Flame by Jennifer Armentrout">
-        <div class="book-review">
-          <div class="title">
-            A Light in the Flame
-          </div>
-          <div class="sentence">
-            It's getting <i>too</i> complicated, I can't continue like this<br><br>
-          </div>
-          <div class="rankings">
-            <b>6/10</b><br>
-            Read this if you like booktok romantasy faves, convoluted world building, and smut
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="sweet-evil.jpg" alt="Book cover for the first book in the Sweet Sweies, Sweet Evil by Wendy Higgins">
-        <div class="book-review">
-          <div class="title">
-            The Sweet Series
-          </div>
-          <div class="sentence">
-            Reread the entire series within 2 days--it held up.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            Read this if you like YA paranormal romance, having a good time, and unique world building
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="wold-willow-witch.jpg" alt="Book cover for Wolf, Willow, Witch by Freydis Moon">
-        <div class="book-review">
-          <div class="title">
-            Wolf, Willow, Witch
-          </div>
-          <div class="sentence">
-            The MMC did have a dog head... but it was okay.<br><br>
-          </div>
-          <div class="rankings">
-            <b>9/10</b><br>
-            Read this if you like bossy women, villians falling in love, <i>or</i> hate mega churches
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="once-upon-a-broken-heart.jpg" alt="Book cover for Once Upon a Broken Heart by Stephanie Garber">
-        <div class="book-review">
-          <div class="title">
-            Once Upon a Broken Heart
-          </div>
-          <div class="sentence">
-            We need more whimsical media!<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            Read this if you like fairy tales, YA fantasy, and whiny heroines
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="the-ashes-and-the-star-cursed-king.jpg" alt="Book cover for The Ashes and the Star-Cursed King by Carissa Broadbent">
-        <div class="book-review">
-          <div class="title">
-            The Ashes and the Star-Cursed King
-          </div>
-          <div class="sentence">
-            Solid, but not really special... I think I'm done with the series<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            Read this if you like booktok faves, fantasy romance,and an alright story
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="open-water.jpg" alt="Book cover for Open Water by Caleb Azumah Nelson">
-        <div class="book-review">
-          <div class="title">
-            Open Water
-          </div>
-          <div class="sentence">
-            Not even the second person pov could make me not love this book.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            Read this if you like beautiful, flowery writing, crying, and love letters
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="parable-of-the-sower.jpg" alt="Book cover for the graphic novel version of Parable of the Sower, originally written by Octavia Butler and adapted by Damian Duffy and John Jennings">
-        <div class="book-review">
-          <div class="title">
-            Parable of the Sower (Graphic Novel)
-          </div>
-          <div class="sentence">
-            A teenage girl who leads a cult, what could be better?<br><br>
-          </div>
-          <div class="rankings">
-            <b>9/10</b><br>
-            Read this if you like the <i>idea</i> of Octavia Butler, YA early 2010s dystopian novels, and Black FMCs
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="heart-haunt-havoc.jpg" alt="Book cover for Heart, Haunt, Havoc by Freydis Moon">
-        <div class="book-review">
-          <div class="title">
-            Heart, Haunt, Havoc
-          </div>
-          <div class="sentence">
-            I took like 6 months to finish this 160 page book...<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            Read this if you like mystical vibes, short reads, and queer people
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="six-scorched-roses.png" alt="Book cover for Six Scorched Roses by Carissa Broadbent">
-        <div class="book-review">
-          <div class="title">
-            Sixed Scorched Roses
-          </div>
-          <div class="sentence">
-            I don't know if I even like this series...<br><br>
-          </div>
-          <div class="rankings">
-            <b>7/10</b><br>
-            Read this if you like fantasy romance, quick reads, and booktok faves
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="exodus-20-3.jpg" alt="Book cover for Exodus 20:3 by Freydis Moon">
-        <div class="book-review">
-          <div class="title">
-            Exodus 20:3
-          </div>
-          <div class="sentence">
-            Going thru a reading slump, short books only.<br><br>
-          </div>
-          <div class="rankings">
-            <b>9/10</b><br>
-            Read this if you like queer stories, quick reads, and religious eroticism
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="mountain-made-of-glass.jpg" alt="Book cover for Mountain Made of Glass by Scarlett St. Clair">
-        <div class="book-review">
-          <div class="title">
-            Mountains Made of Glass
-          </div>
-          <div class="sentence">
-            A solid book, nothing to write home about<br><br>
-          </div>
-          <div class="rankings">
-            <b>8/10</b><br>
-            Read this if you like fairy tale retellings, dark-ish stories, and smut
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="pride-and-prejudice.jpg" alt="Book cover for Pride and Prejudice by Jane Austen">
-        <div class="book-review">
-          <div class="title">
-            Pride and Prejudice
-          </div>
-          <div class="sentence">
-            idk, I didn't get the hype.<br><br>
-          </div>
-          <div class="rankings">
-            <b>7/10</b><br>
-            Read this if you like the classics, romance that doesn't really feel romantic, and being a bit bored
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="percy-jackson.jpg" alt="Book cover for the first book of the Percy Jackson series, the Lighning Thief by Rick Riordan">
-        <div class="book-review">
-          <div class="title">
-            Percy Jackson and the Olympians Series
-          </div>
-          <div class="sentence">
-            A reread in prep for the new series coming out next year!<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            Read this if you like feeling nostalgic, going on adventures, and something light and fun
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <img class="book-img" src="get-a-life-chloe-brown.jpg" alt="Book cover for Get a Life, Chloe Brown by Talia Hibbert">
-        <div class="book-review">
-          <div class="title">
-            Get a Life, Chloe Brown
-          </div>
-          <div class="sentence">
-            I reread this for my thesis, still a good time.<br><br>
-          </div>
-          <div class="rankings">
-            <b>10/10</b><br>
-            Read this if you like rom-coms, diverse reads, and having a good, cheesy time!
-          </div>
-        </div>
-      </div>
-
-      <div class="book">
-        <a href="https://app.thestorygraph.com/profile/lyssaisreading" target="_blank">
-          <img class="logo" src="storygraph.png" alt="The storygraph logo">
-        </a>
-        <div class="logo-words">
-          See what else I'm reading!
-        </div>
-      </div>
-
-    </div>
-
-
-
+    
+ 
 
     <script>
-      const album = document.querySelectorAll('.album');
-      const movie = document.querySelectorAll('.movie');
+      const flier = document.querySelectorAll('.flier');
+      const presentation = document.querySelectorAll('.presentation');
       const book = document.querySelectorAll('.book')
 
-      album.forEach((element, index) => {
+      flier.forEach((element, index) => {
         let isClicked = false;
 
         element.addEventListener('mouseover', () => {
           if (!isClicked) {
-            for (let i = index + 1; i < album.length; i++) {
-              album[i].classList.add('shift-album');
+            for (let i = index + 1; i < flier.length; i++) {
+              flier[i].classList.add('shift-flier');
             }
           }
         });
 
         element.addEventListener('mouseout', () => {
           if (!isClicked) {
-            album.forEach((el) => {
-              el.classList.remove('shift-album');
+            flier.forEach((el) => {
+              el.classList.remove('shift-flier');
             });
           }
         });
 
         element.addEventListener('click', () => {
           isClicked = !isClicked;
-          for (let i = index + 1; i < album.length; i++) {
-            album[i].classList.toggle('shift-album', isClicked);
+          for (let i = index + 1; i < flier.length; i++) {
+            flier[i].classList.toggle('shift-flier', isClicked);
           }
         });
       });
 
-      album.forEach((element) => {
+      flier.forEach((element) => {
         element.addEventListener('click', () => {
-          const musicReview = element.querySelector('.music-review');
-          musicReview.classList.toggle('show');
+          const flierReview = element.querySelector('.flier-disc');
+          flierReview.classList.toggle('show');
         });
       });
 
 
-      movie.forEach((element, index) => {
+      presentation.forEach((element, index) => {
         let isClicked = false;
 
         element.addEventListener('mouseover', () => {
           if (!isClicked) {
-            for (let i = index + 1; i < movie.length; i++) {
-              movie[i].classList.add('shift-movie');
+            for (let i = index + 1; i < presentation.length; i++) {
+              presentation[i].classList.add('shift-presentation');
             }
           }
         });
 
         element.addEventListener('mouseout', () => {
           if (!isClicked) {
-            movie.forEach((el) => {
-              el.classList.remove('shift-movie');
+            presentation.forEach((el) => {
+              el.classList.remove('shift-presentation');
             });
           }
         });
 
         element.addEventListener('click', () => {
           isClicked = !isClicked;
-          for (let i = index + 1; i < movie.length; i++) {
-            movie[i].classList.toggle('shift-movie', isClicked);
+          for (let i = index + 1; i < presentation.length; i++) {
+            presentation[i].classList.toggle('shift-presentation', isClicked);
           }
         });
       });
 
-      movie.forEach((element) => {
+      presentation.forEach((element) => {
         element.addEventListener('click', () => {
-          const movieReview = element.querySelector('.movie-review');
-          movieReview.classList.toggle('show');
+          const presentationReview = element.querySelector('.presentation-disc');
+          presentationReview.classList.toggle('show');
         });
       });
 
@@ -1391,7 +774,7 @@
         element.addEventListener('mouseover', () => {
           if (!isClicked) {
             for (let i = index + 1; i < book.length; i++) {
-              book[i].classList.add('shift-movie');
+              book[i].classList.add('shift-presentation');
             }
           }
         });
@@ -1399,7 +782,7 @@
         element.addEventListener('mouseout', () => {
           if (!isClicked) {
             book.forEach((el) => {
-              el.classList.remove('shift-movie');
+              el.classList.remove('shift-presentation');
             });
           }
         });
@@ -1407,14 +790,14 @@
         element.addEventListener('click', () => {
           isClicked = !isClicked;
           for (let i = index + 1; i < book.length; i++) {
-            book[i].classList.toggle('shift-movie', isClicked);
+            book[i].classList.toggle('shift-presentation', isClicked);
           }
         });
       });
 
       book.forEach((element) => {
         element.addEventListener('click', () => {
-          const bookReview = element.querySelector('.book-review');
+          const bookReview = element.querySelector('.book-disc');
           bookReview.classList.toggle('show');
         });
       });
