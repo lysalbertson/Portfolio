@@ -533,7 +533,7 @@
     <script>
       const flier = document.querySelectorAll('.flier');
       const presentation = document.querySelectorAll('.presentation');
-      const book = document.querySelectorAll('.book')
+     
 
       flier.forEach((element, index) => {
         let isClicked = false;
@@ -604,39 +604,7 @@
         });
       });
 
-      book.forEach((element, index) => {
-        let isClicked = false;
-
-        element.addEventListener('mouseover', () => {
-          if (!isClicked) {
-            for (let i = index + 1; i < book.length; i++) {
-              book[i].classList.add('shift-presentation');
-            }
-          }
-        });
-
-        element.addEventListener('mouseout', () => {
-          if (!isClicked) {
-            book.forEach((el) => {
-              el.classList.remove('shift-presentation');
-            });
-          }
-        });
-
-        element.addEventListener('click', () => {
-          isClicked = !isClicked;
-          for (let i = index + 1; i < book.length; i++) {
-            book[i].classList.toggle('shift-presentation', isClicked);
-          }
-        });
-      });
-
-      book.forEach((element) => {
-        element.addEventListener('click', () => {
-          const bookReview = element.querySelector('.book-disc');
-          bookReview.classList.toggle('show');
-        });
-      });
+    
 
 
     </script>
