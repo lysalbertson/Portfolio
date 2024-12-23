@@ -191,11 +191,18 @@
     .shift-presentation {
       transform: translateX(200px);
     }
-
-    .links {
-
-      height: 80px;
+    .link-container{
       text-align: center;
+      flex: center;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 10px 
+      
+    }
+    .links {
+      height: 80px;
+      width: 8opx;
+      object-fit: contain;
     }
   </style>
 
@@ -365,6 +372,7 @@
       Thanks for coming by! This page is also a part of my portfolio. It has been hand coded with love and care and was based on my final project for a class I took called Internet Art. To see that (and my other projects) please click below.
 
     </div>
+    <div class="link-container">
 <a href="https://www.linkedin.com/in/lyssa-albertson/" target="_blank"><img class="links" src="linkedin.png" alt="description of image"></a>
     
     
@@ -374,7 +382,7 @@
     <img class="links" src="resume-link.png" alt="Resume Icon">
 </a>
    
-
+</div>
 
     <script>
       const flier = document.querySelectorAll('.flier');
